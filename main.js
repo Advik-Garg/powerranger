@@ -1,21 +1,50 @@
-var canvas = new fabric.Canvas('myCanvas');
- var x= document.getElementById("myAudio");
 
-function new_image()
+// Create canvas variable
+ block_y=1;
+ block_x=1;
+
+block_image_width = 350;
+block_image_height = 430;
+
+var block_image_object= "";
+
+function new_image(get_image)
 {
-fabric.Image.fromURL("BirthdayImage.jpg",function(Ing){
-block_object=Ing
-block_object.scaleToWidth(1000)
-block_object.scaleToHeight(600) 
-block_object.set({
-    top:0,
-    left:0
-})
-canvas.add(block_object)
-})	
+	// to upload images
+}
+
+window.addEventListener("keydown", my_keydown);
+
+function my_keydown(e)
+{
+keyPressed = e.keyCode;
+console.log(keyPressed);
+
+	if(keyPressed == '?') // add appropriate keycode
+	{
+		// upload red ranger
+	}
+	if(keyPressed == '71')
+	{
+		block_x = 200;
+		// upload green ranger
+	}
+	
+	if(keyPressed == '89')
+	{
+		block_x =350;
+		// upload yellow ranger
+	}
+	if(keyPressed == '80')
+	{
+		block_x = 600;
+		// upload pink ranger
+	}
+	if(keyPressed == '66')
+	{
+		block_x = 700;
+	// upload blue ranger
+	}
 	
 }
 
-function play(){
-x.play()	
-}
