@@ -1,0 +1,19 @@
+.body_backgorund 
+{
+    background-image:url(hOye.gif);
+    background-position:center;
+    background-size:cover;
+    text-align: center;
+}
+#myCanvas
+{
+ background-color: white; 
+ border:2px solid black;
+ text-align: center; 
+}
+#play_Button {
+    text-align: center;
+    font-size: 30px;
+    border-radius: 5%;
+}
+
